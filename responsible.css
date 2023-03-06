@@ -1,0 +1,235 @@
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .hamburger{
+        display: block;
+    }
+
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    
+    .list {
+        position: fixed;
+        padding-top: 7rem;
+        left: -100%;
+        top: 70px;
+        z-index: 9999;
+        background: var(---header);
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        width: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .list li a {
+        font-size: 2.5rem;
+    }
+
+    .list.active {
+        left: 0;
+    }
+
+    .list.close {
+        visibility: hidden;
+    }
+
+
+    .header .navMenu .list .btn-header{
+        margin-left: 0;
+    }
+
+
+
+    /* HERO */
+
+    .hero .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero .content .btn{
+        justify-content: center;
+        margin-bottom: 10rem;
+    }
+
+    .hero .img-hero{
+        justify-content: center;
+    }
+
+    /* SECTION ABOUT */
+
+    .about .container{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .about  .content .btn{
+        justify-content: center;
+        margin-bottom: 10rem;
+    }
+
+    .about  .img-about{
+        justify-content: center;
+    }
+
+    /* SECTION benefits */
+
+    .benefits .container .all-cards{
+        flex-direction: column;
+    }
+
+    .benefits .all-cards .card{
+        width: 100%;
+        align-items: start;
+        text-align: start;
+    }
+    
+    .benefits .all-cards .card img{
+        width: 10%;
+    }
+    .benefits .all-cards .card .text h3{
+        font-size: 3rem;
+    }
+    
+    .benefits .all-cards .card .text p{
+        font-size: 2rem;
+    }
+
+
+    /* SECTION CONVENCER */
+
+    .convencer .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .convencer  .image{
+        justify-content: center;
+    }
+
+    .convencer  .content .btn{
+        justify-content: center;
+    }
+
+    /* SECTION TESTEMONIAIS */
+
+    .testimonials .container .modal{
+        flex-direction: column;
+    }
+
+    .testimonials .container .modal .test{
+        width: 100%;
+        align-items: start;
+        text-align: start;
+    }
+    
+    .testimonials .container .modal .test img{
+        width: 10%;
+    }
+    .testimonials .container .modal .test h3{
+        font-size: 3rem;
+    }
+    
+    .testimonials .container .modal .test q{
+        font-size: 2rem;
+    }
+
+    /* SECTION ROI*/
+
+    .roi .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .roi  .img-roi{
+        margin-top: 10rem;
+        justify-content: center;
+    }
+    .roi  .img-roi img{
+        width: 70%;
+    }
+
+    .roi .content .btn{
+        justify-content: center;
+    }
+
+    /* SECTION BONUS */
+
+    .bonus .container{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 10rem;
+    }
+
+    .img-bonus{
+        flex-direction: column;
+    }
+
+    .bonus .content .btn{
+        justify-content: center;
+    }
+
+    /* SECTION PRICE */
+
+    .price .container{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .price .img{
+        justify-content: center;
+    }
+    .price .img img{
+        width: 70%;
+    }
+
+    /* FOOTER */
+
+    
+    .footer .container .row {
+        text-align: center;
+        align-items: center;
+        gap: 5rem;
+        flex-direction: column;
+    }
+
+    .footer .col-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .col-3 p {
+        width: 100%;
+        max-width: 20rem;
+    }
+}
